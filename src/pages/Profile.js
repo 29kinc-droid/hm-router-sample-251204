@@ -17,7 +17,8 @@ const data = {
 
 const Profile = () => {
   const { username } = useParams();
-  const profile = data[username];
+  // const profile = data[username];
+  const profile = { name: username, description: "안녕하세요" };
   return (
     <>
       <h1>사용자 프로필</h1>
